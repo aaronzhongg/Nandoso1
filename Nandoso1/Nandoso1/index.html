@@ -9,12 +9,19 @@
     <script src="scripts/bootstrap.min.js"></script>
     <!--<script src="scripts/index.js"></script> -->
     <script src="scripts/SpecialsModule.js"></script>
+    <script src="Scripts/facebooklogin.js"></script>
 
 </head>
 
 <body>
+<div>
+    <h1>Welcome to Nandoso's Special Menu!</h1>
+    </div>
 
-<h1>Welcome to Nandoso's Special Menu!</h1>
+    <div>
+    <p>Please log in to Facebook to see Specials</p>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+        <div id="status"></div></div>
 
 </body>
 </html>
