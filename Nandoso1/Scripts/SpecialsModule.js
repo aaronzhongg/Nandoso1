@@ -4,12 +4,12 @@ var SpecialsModule = (function () {
 
     // Return anything that you want to expose outside the closure
     return {
-        getStudents: function (callback) {
+        getSpecials: function (callback) {
 
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "http://localhost:50124/api/Specials",
+                url: "http://nandosonandoso.azurewebsites.net/api/Specials",
                 success: function (data) {
                     console.log(data);
                     callback(data);

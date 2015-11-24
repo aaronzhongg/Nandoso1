@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Students</title>
+    <title>Nandoso's</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="Content/style.css" />
@@ -14,14 +14,33 @@
 </head>
 
 <body>
-<div>
-    <h1>Welcome to Nandoso's Special Menu!</h1>
+    <div>
+        <h1>Welcome to Nandoso's Special Menu!</h1>
     </div>
 
     <div>
-    <p>Please log in to Facebook to see Specials</p>
+        <p>Please log in to Facebook to see Specials</p>
         <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-        <div id="status"></div></div>
+        <div id="status"></div>
+    </div>
+
+    <div class="container">
+        <!--<a href="Create.html">+ Create a student</a>-->
+        <div class="table-responsive">
+            <table class="table table-striped spaced-table table-hover" id="tblspecials">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Regular Price</th>
+                        <th>Special Price</th>
+                    </tr>
+                </thead>
+                <tbody id="tblspecialscontent"></tbody>
+            </table>
+            <!--<p id="loadingmsg">Students table loading...</p>-->
+        </div>
+    </div>
+
 
 </body>
 </html>
