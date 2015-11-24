@@ -9,7 +9,7 @@ var SpecialsModule = (function () {
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "http://nandosonandoso.azurewebsites.net/api/Specials",
+                url: "https://nandosonandoso.azurewebsites.net/api/Specials",
                 success: function (data) {
                     console.log(data);
                     callback(data);
