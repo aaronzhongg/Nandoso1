@@ -10,11 +10,6 @@
     vertical-align:middle;  /*when you add button it gets weird so need this*/
 }
 
-#tblspecials{
-    border-collapse: separate;
-    border-spacing:0 5px;
-}
-
 #heading{
   top:-25px;
   height:150px;
