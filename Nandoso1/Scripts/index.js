@@ -1,7 +1,7 @@
 ﻿// This event triggers on page load
 document.addEventListener("DOMContentLoaded", function () {
     console.log("This works!");
-    if (checkLoginState().localeCompare("connected")) {
+    if (checkLoginState() == "connected") {
         loadSpecials();
     }
 });
