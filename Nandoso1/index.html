@@ -15,14 +15,18 @@
 </head>
 
 <body style='font-family:"Segoe UI"'>
-    <div id="heading" style="background:orange">
-        <h1 style="text-align:center;vertical-align:middle;color:white;line-height:100px">Welcome to Nandoso's Special Menu!</h1>
+    <div id="heading" style="background:#ff4a00">
+        <div id="h1">
+        <h1 >Welcome to Nandoso's Special Menu!</h1>
+            </div>
+        <div id="fb">
+        <p>Please log in to Facebook to see Specials</p>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+        </div>
     </div>
 
     <div>
-        <p>Please log in to Facebook to see Specials</p>
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-        <div id="status"></div>
+        
     </div>
 
     <div class="container">

@@ -78,5 +78,6 @@ function testAPI() {
         // to show the user they're currently logged in.
         document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
+        loadSpecials();
     });
 }
