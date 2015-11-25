@@ -41,4 +41,6 @@ function loadSpecials() {
 
         }
     }
+    document.getElementById('loginmsg').innerHTML = "hidden";
+    document.getElementById('logged').innerHTML = "hidden";
 }
