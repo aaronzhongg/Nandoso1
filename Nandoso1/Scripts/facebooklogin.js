@@ -8,7 +8,6 @@ function statusChangeCallback(response) {
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
         // Logged into your app and Facebook.
-        document.getElementById("fb").style.visibility = "hidden";
         loadSpecials();
         testAPI();
     } else if (response.status === 'not_authorized') {

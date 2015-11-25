@@ -22,9 +22,10 @@
         <div id="fb">
         <p>Log in to Facebook to see Specials</p>
         <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-            
+            <div id="status"></div>
         </div>
-        <div id="status"></div>
+        <a href="Feedback.html" style="background:#e9ff00"> Give Feedback</a>
+        
     </div>
 
     <div>
@@ -32,7 +33,7 @@
     </div>
 
     <div class="container">
-        <!--<a href="Create.html">+ Create a student</a>-->
+        
         <div class="table-responsive">
             <table class="table table-striped spaced-table table-hover" id="tblspecials">
                 <thead>
@@ -44,7 +45,7 @@
                 </thead>
                 <tbody id="tblspecialscontent"></tbody>
             </table>
-            <!--<p id="loadingmsg">Students table loading...</p>-->
+            <p id="loginmsg">Log in to facebook to view specials</p>
         </div>
     </div>
 </body>
