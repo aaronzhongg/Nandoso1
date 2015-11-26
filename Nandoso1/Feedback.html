@@ -2,21 +2,38 @@
 <html>
 <head>
     <title>Nandoso's Feedback</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="Content/style.css" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/facebooklogin.js"></script>
+
 </head>
 
 <body style='font-family:"Segoe UI"'>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=614836938654460";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
     <div id="heading" style="background:#ff4a00">
         <a href="index.html" style="background:#e9ff00"> Return to Homepage</a>
         <div id="h1">
             <h1>Welcome to Nandoso's Feedback Forum!</h1>
         </div>
+        <div id="fb">
+            <p id="logged">Log in to Facebook give feedback</p>
+            <fb:login-button id="fbbtn" scope="public_profile,email" onlogin="checkLoginState();" data-auto-logout-link="true" data-size="large"></fb:login-button>
+            <div id="status"></div>
+        </div>
     </div>
 
-    
+    <div class="fb-comments" data-href="http://nandosonandoso.azurewebsites.net" data-width="100%" data-numposts="5"></div>
 </body>
 </html>
