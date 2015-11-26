@@ -42,5 +42,5 @@ function loadSpecials() {
         }
     }
     document.getElementById('loginmsg').style.visibility = "hidden";
-    document.getElementById('logged').style.visibility = "hidden";
+    
 }
