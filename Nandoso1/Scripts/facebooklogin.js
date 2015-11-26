@@ -23,6 +23,7 @@ function statusChangeCallback(response) {
         document.getElementById('status').innerHTML = 'Please log ' +
           'into Facebook.';
         document.getElementById('logged').style.visibility = "visible"
+        document.getElementById('loginmsg').style.visibility = "visible"
         $("#tblspecialscontent").html("");
     }
 }
