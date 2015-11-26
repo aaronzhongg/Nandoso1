@@ -1,8 +1,7 @@
-﻿// We've sepearated out all the functions related to making the AJAX calls to the API
-// Just keeps things tidy, allows us to keep some things private
+﻿//AJAX calls to api
 var SpecialsModule = (function () {
 
-    // Return anything that you want to expose outside the closure
+    //returns all the specials in the db
     return {
         getSpecials: function (callback) {
 

@@ -1,6 +1,8 @@
 ﻿// This event triggers on page load
 document.addEventListener("DOMContentLoaded", function () {
     console.log("This works!");
+
+    //if user is logged into facebook then call the loadSpecials function to start loading specials
     if (checkLoginState() == "connected") {
         loadSpecials();
     }
@@ -8,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function loadSpecials() {
 
-    // We need a reference to the div/table that we are going to chuck our data into
     var specialsTable = document.getElementById("tblspecialscontent");
 
+    //get the specials from SpecialsModule then call function to create table
     SpecialsModule.getSpecials(function (specialsList) {
         setupSpecialsTable(specialsList);
     });
 
-    // This is the callback for when the data comes back in the studentmodule
+    // after retrieving specials from SpecialsModule, set up table
     function setupSpecialsTable(specials) {
         console.log(specials);
         for (i = 0; i < specials.length; i++) {
@@ -41,6 +43,8 @@ function loadSpecials() {
 
         }
     }
+
+    //hide the loginmsg after logged in
     document.getElementById('loginmsg').style.visibility = "hidden";
     
 }
